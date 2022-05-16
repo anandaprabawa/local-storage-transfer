@@ -1,0 +1,76 @@
+body {
+  width: 300px;
+  padding: 16px;
+}
+
+.title {
+  margin-top: 0;
+}
+
+.rules {
+  margin-bottom: 24px;
+}
+
+.field-group {
+  display: flex;
+  flex-direction: column;
+}
+
+.field-group:not(:last-child) {
+  margin-bottom: 16px;
+}
+
+label {
+  font-weight: bold;
+  margin-bottom: 4px;
+}
+
+p {
+  margin: 0 0 4px 0;
+}
+
+select {
+  padding: 8px;
+  border-radius: 4px;
+  border: 1px solid #cccccc;
+  background-color: #f7f7f7;
+}
+
+.actions {
+  display: flex;
+  justify-content: center;
+  margin: 40px -2px 0 -2px;
+}
+
+button {
+  background-color: #d32f2f;
+  color: #ffffff;
+  box-shadow: 0 3px 5px #dddddd;
+  outline: none;
+  border: 1px solid #d32f2f;
+  padding: 8px 16px;
+  border-radius: 4px;
+  margin: 0 2px;
+  flex: 1;
+  cursor: pointer;
+}
+
+button:disabled {
+  opacity: 0.5;
+  cursor: default;
+}
+
+button:not(:disabled):hover {
+  background-color: #b71c1c;
+}
+
+.error {
+  display: none;
+  color: #d32f2f;
+  margin-top: 2px;
+  font-size: 90%;
+}
+
+.show {
+  display: block;
+}
