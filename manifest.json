@@ -1,7 +1,7 @@
 {
   "name": "Local Storage Transfer",
   "description": "Transfer local storage data key/value pairs from source to destination website on between tabs.",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "manifest_version": 3,
   "background": {
     "service_worker": "background.js"
