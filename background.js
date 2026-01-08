@@ -77,7 +77,7 @@ async function setLocalStorageOnDestination(url, items) {
   const [tab] = await chrome.tabs.query({ url: normalizeUrl(url) });
 
   await executeScript({
-    target: { tabId: tab.id },
+    target: { tabId: tab.id, allFrames: true },
     function: execScriptPutLocalStorage,
     args: [items],
   });
